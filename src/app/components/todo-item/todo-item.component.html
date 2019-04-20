@@ -1,0 +1,9 @@
+<div [ngClass]="setClasses()">
+  <li class="list-group-item">
+    <input type="checkbox" (change)="onToggle(todo)" />
+    {{ todo.title }}
+    <div class="float-right">
+      <button type="button" (click)="onDelete(todo)" class="btn btn-danger btn-sm">X</button>
+    </div>
+  </li>
+</div>
