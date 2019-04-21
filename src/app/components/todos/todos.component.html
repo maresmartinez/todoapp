@@ -1,9 +1,0 @@
-<main class="container">
-    <app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
-    <ul class="list-group">
-        <app-todo-item *ngFor="let todo of todos" 
-          [todo]="todo"
-          (deleteTodo)="deleteTodo($event)">
-        </app-todo-item>
-      </ul>
-</main>
